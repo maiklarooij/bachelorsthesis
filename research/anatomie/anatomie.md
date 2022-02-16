@@ -47,6 +47,7 @@ Verplichte velden:
 - Datum
 - Link naar bestand
 - Aantal pagina's
+- Taal document
 
 Optionele velden:
 - Weigeringsgronden (eventueel, bij niet of deels openbaar): 10.1.b; 10.2.e
@@ -93,7 +94,8 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "19-03-2019",
             "link": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+bijj+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
-            "paginas": 7
+            "paginas": 7,
+            "taal": "Engels"
         },
         {
             "document_nr": 4,
@@ -105,7 +107,8 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "24-06-2021",
             "link": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+bijj+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
-            "paginas": 7
+            "paginas": 7,
+            "taal": "Nederlands"
         },
         {
             "document_nr": 5,
@@ -118,7 +121,8 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "28-07-2020",
             "link": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+2+bij+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF+%282%29.pdf",
-            "paginas": 5
+            "paginas": 5,
+            "taal": "Engels"
         },
         {
             "document_nr": 6,
@@ -130,7 +134,8 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "24-06-2021",
             "link": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+2+bij+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF+%282%29.pdf",
-            "paginas": 12
+            "paginas": 12,
+            "taal": "Engels"
         }
     ]
 }
@@ -165,7 +170,8 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "01-12-2021",
             "link": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/07/besluit-op-wob-verzoek-over-openbaarmaking-van-dossier-hoe-werkt-szw/Hoe+werkt+SZW+dossier.pdf",
-            "paginas": 32
+            "paginas": 32,
+            "taal": "Nederlands"
         }
     ]
 }
