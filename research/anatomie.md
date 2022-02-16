@@ -53,10 +53,22 @@ Optionele velden:
 - Weigeringsgronden (eventueel, bij niet of deels openbaar): 10.1.b; 10.2.e
 - Afzender
 - Ontvanger
+- Vindplaats reeds openbare stukken
+- Toelichting
 
 ## Formaat
 
-csv? json? xml? 
+Er moet een uniforme standaard komen. Toch is het lastig om dit op een 'structured' manier op te slaan. Er is namelijk vooraf niet altijd vastgesteld hoeveel bijlagen een document heeft, of er überhaupt bijlagen zijn en of alle velden zijn ingevuld. Het lijkt het beste om de Wobs op een 'semi-gestructureerde' manier op te slaan. Dit is een datatype die wat vaste kenmerken heeft, maar niet één vaste structuur heeft. Op deze manier kunnen er makkelijk metadata en tags worden opgeslagen, die het vervolgens makkelijker moeten maken om de Wobs te kunnen doorzoeken. 
+
+Bekende semi-gestructureerde datatypen zijn XML en JSON. Beide zijn 'human-readable'. JSON heeft een dict-structuur met keys en values. Dit maakt het makkelijk om de data vervolgens weer te verwerken in een programmeertaal zoals Python of Javascript. Nieuwe databases als MongoDB gebruiken zelfs JSON als formaat. 
+
+Waarom JSON over XML?
+
+- JSON is echt een formaat om data op te slaan, terwijl XML eigenlijk een markup language is
+- Minder groot, dus ook sneller verwerkt en uitgewisseld
+- Makkelijk te gebruiken met allerlei programmeertalen, sneller te parsen dan XML
+- JSON is over het algemeen beter leesbaar voor mensen dan XML, omdat XML soms vol staat met allerlei tags
+- Geen validatie nodig (hier is XML sterk in)
 
 ## json voorbeeld
 
@@ -189,3 +201,10 @@ Niet verplichte velden: Intern volgnummer, Subthema, Aanvullende Thema,
 Omschrijving, Verzoeker, Status, Verschoonbare termijnoverschrijding, URL naar
 inventarisatielijst, URL naar bijlagen, Titel voor URL naar bijlage, Geografisch gebied, BAG
 ID, BGT ID, Longitude, Latitude, N; Postcodegebied.
+
+## Handige onderzoeken
+
+Abiteboul, S. (1997, January). Querying semi-structured data. In International Conference on Database Theory (pp. 1-18). Springer, Berlin, Heidelberg. https://apps.dtic.mil/sti/pdfs/ADA428473.pdf
+
+
+
