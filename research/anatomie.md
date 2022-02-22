@@ -4,57 +4,59 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 
 ## Geheel Wob-verzoek
 
-Verplichte velden:
-- ID
-- Titel
-- Verantwoordelijken
-- Indiendatum
-- Besluitdatum
 
-Optionele velden:
-- Beschrijving
-- Intern volgnummer
-- Verzoeker
-- Geografische velden:
-    - Geografisch gebied
-    - BAG ID
-    - BGT ID
-    - Longitude
-    - Latitude
-    - Postcodegebied
+| Veld               | Type    | Verplicht? | Omschrijving                                              | Voorbeeld                                                                                                                                  |
+|--------------------|---------|------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
+| ID                 | int     | Ja         | Uniek ID                                                  | 3928                                                                                                                                       |
+| Titel              | str     | Ja         | Titel Wob-verzoek                                         | Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)                           |
+| Verantwoordelijken | str     | Ja         | Verantwoordelijke voor het behandelen van het Wob-verzoek | Ministerie van Buitenlandse Zaken                                                                                                          |
+| Indiendatum        | date    | Ja         | Datum van indienen Wob-verzoek                            | 22-12-2021                                                                                                                                 |
+| Besluitdatum       | date    | Ja         | Datum van reactie/besluit Wob-verzoek                     | 02-02-2022                                                                                                                                 |
+| Beschrijving       | str     | Nee        | Beschrijving Wob-verzoek                                  | Besluit op een verzoek om informatie over de samenwerkingsovereenkomsten tussen de Nederlandse overheid en het World Economic Forum (WEF). |
+| Intern volgnummer  | str/int | Nee        | Volgnummer voor intern gebruik                            | BUZA-129                                                                                                                                   |
+| Verzoeker          | str     | Nee        | Naam verzoeker                                            | Follow the Money                                                                                                                           |
+| Geografisch gebied | str     | Nee        | Naam geografisch gebied                                   | Den Haag                                                                                                                                   |
+| BAG ID             | int     | Nee        | Basisregistratie Adressen en Gebouwen ID                  | 2389120312367                                                                                                                              |
+| BGT ID             | int     | Nee        | Basisregistratie Grootschalige Topografie ID              | 3243134                                                                                                                                    |
+| Longitude          | float   | Nee        | Oost-west positie                                         | 103.800670                                                                                                                                 |
+| Latitude           | float   | Nee        | Noord-zuid positie                                        | 1.320660                                                                                                                                   |
+| Postcodegebied     | str     | Nee        | Postcodenummers                                           | 3825                                                                                                                                       |
 
 ### Besluit document (verplicht)
 
-- Documentnummer (# van verzoek)
-- Bestandsnaam
-- Link naar bestand
-- Besluit (openbaar, deels openbaar, niet openbaar)
-- Verdaagd (ja/nee)
+| Veld              | Type | Verplicht? | Omschrijving                                                                         | Voorbeeld                                                                                                                                                                                                                                                                   |
+|-------------------|------|------------|--------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Documentnummer    | int  | Ja         | Documentnummer van verzoek                                                           | 1                                                                                                                                                                                                                                                                           |
+| Bestandsnaam      | str  | Ja         | Bestandsnaam besluitdocument                                                         | Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf                                                                                                                                                                                                        |
+| Link naar bestand | str  | Ja         | Link naar bestand besluitsdocument                                                   | https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf |
+| Beoordeling           | str  | Ja         | Besluit gehele Wob-verzoek (openbaar, deels openbaar, niet openbaar, reeds openbaar) | Deels openbaar                                                                                                                                                                                                                                                              |
+| Verdaagd          | str  | Ja         | 'Ja' als besluit is verdaagd, 'Nee' als dit niet het geval is                        | Nee                                                                                                                                                                                                                                                                         |
 
 ### Inventaris document (optioneel)
 
-- Documentnummer (# van verzoek)
-- Bestandsnaam
-- Link naar bestand
+| Veld              | Type | Verplicht? | Omschrijving                         | Voorbeeld                                                                                                                                                                                                                                                                   |
+|-------------------|------|------------|--------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| Documentnummer    | int  | Ja         | Documentnummer van verzoek           | 2                                                                                                                                                                                                                                                                           |
+| Bestandsnaam      | str  | Ja         | Bestandsnaam inventarisdocument      | Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf                                                                                                                                                                                                        |
+| Link naar bestand | str  | Ja         | Link naar bestand inventarisdocument | https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf |
 
 ### Bijlage document(en)
 
-Verplichte velden:
-- Documentnummer (van verzoek): 1
-- Type: Verslag, E-mail, Nota, Brief, SMS, Rapport, Notitie, Presentatie, Spreadsheet, Overeenkomst, Memo, Anders
-- Naam document
-- Beoordeling: Deels openbaar
-- Datum
-- Link naar bestand
-- Aantal pagina's
-- Taal document
-
-Optionele velden:
-- Weigeringsgronden (eventueel, bij niet of deels openbaar): 10.1.b; 10.2.e
-- Afzender
-- Ontvanger
-- Vindplaats reeds openbare stukken
-- Toelichting
+| Veld                              | Type     | Verplicht?                                                     | Omschrijving                                                                           | Voorbeeld                                                                                                                                                     |                                       |
+|-----------------------------------|----------|----------------------------------------------------------------|----------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------|
+| Documentnummer                    | int      | Ja                                                             | Documentnummer van verzoek                                                             | 3                                                                                                                                                             |                                       |
+| Bestandsnaam                      | str      | Ja                                                             | Bestandsnaam bijlage                                                                   | wob-besluit+hoe+werkt+SZW+dossier.pdf                                                                                                                         |                                       |
+| Link naar bestand                 | str      | Ja                                                             | Link naar bijlage                                                                      | https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/07/besluit-op-wob-verzoek-over-openbaarmaking-van-dossier-hoe-werkt-szw/ | wob-besluit+hoe+werkt+SZW+dossier.pdf |
+| Type                              | str      | Ja                                                             | Type bijlage                                                                           | E-Mail                                                                                                                                                        |                                       |
+| Beoordeling                       | str      | Ja                                                             | Beoordeling van het document (deels openbaar, openbaar, niet openbaar, reeds openbaar) | Openbaar                                                                                                                                                      |                                       |
+| Weigeringsgronden                 | list/str | Ja (enkel bij beoordeling 'deels openbaar' en 'niet openbaar') | Vindplaats weigeringsgronden bij niet geheel openbaar document                         | 10.1.b; 10.2.e                                                                                                                                                |                                       |
+| Vindplaats reeds openbare stukken | str      | Ja (enkel bij beoordeling 'reeds openbaar')                    | Vindplaats van reeds openbare documenten                                               | https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/07/besluit-op-wob-verzoek-over-openbaarmaking-van-dossier-hoe-werkt-szw/ | wob-besluit+hoe+werkt+SZW+dossier.pdf |
+| Afzender                          | str      | Ja                                                             | Afzender bijlage                                                                       | Ministerie van Buitenlandse Zaken                                                                                                                             |                                       |
+| Ontvanger                         | str      | Ja                                                             | Ontvanger bijlage                                                                      | World Economic Forum                                                                                                                                          |                                       |
+| Datum                             | date     | Ja                                                             | Datum gecreëerd                                                                        | 19-03-2019                                                                                                                                                    |                                       |
+| Taal                              | str      | Ja                                                             | Taal van het document                                                                  | Nederlands                                                                                                                                                    |                                       |
+| Aantal pagina's                   | int      | Ja                                                             | Aantal pagina's van het document                                                       | 12                                                                                                                                                            |                                       |
+| Toelichting                       | str      | Nee                                                            | Eventuele toelichtingen                                                                | Document verstuurd door medewerker BuZa namens minister                                                                                                       |                                       |
 
 ## Formaat
 
