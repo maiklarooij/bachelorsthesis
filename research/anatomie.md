@@ -42,6 +42,7 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 | Tekstpagina's | number | Nee | Aantal pagina's in bestand met tekst | 2 |
 | Download datum | date | Nee | Gedownload op | 01-03-2022 |
 | Taal                              | string      | Nee                                                             | Taal van het document                                                                  | Nederlands  |
+| Grootte | string | Nee | Grootte van het bestand | 392 kB |
 
 ### Extra velden voor vrijgegeven document
 
