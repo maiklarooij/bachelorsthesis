@@ -7,7 +7,7 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 
 | Veld               | Type    | Verplicht? | Omschrijving                                              | Voorbeeld                                                                                                                                  |
 |--------------------|---------|------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| ID                 | number     | Ja         | Uniek ID                                                  | 3928                                                                                                                                       |
+| Wob ID                 | number     | Ja         | Uniek ID                                                  | 3928                                                                                                                                       |
 | Titel              | string     | Ja         | Titel Wob-verzoek                                         | Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)                           |
 | Thema | string | Nee | Eventueel thema van het Wob-verzoek | Wob-verzoeken vrije tijd |
 | Verantwoordelijken | string     | Ja         | Verantwoordelijke voor het behandelen van het Wob-verzoek | Ministerie van Buitenlandse Zaken                                                                                                          |
@@ -31,7 +31,7 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 
 | Veld              | Type | Verplicht? | Omschrijving                                 | Voorbeeld                                                                                                                                                                                          |
 |-------------------|------|------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| Documentnummer    | number  | Ja         | Documentnummer van verzoek                   | 3                                                                                                                                                                                                  |
+| Document ID    | number  | Ja         | Uniek Document ID                 | 3                                                                                                                                                                                                  |
 | Bestandsnaam      | string  | Ja         | Bestandsnaam                         | 2021-105+Besluit+Wob-verzoek++De+Vaandeldrager.pdf                                                                                                                                                             |
 | Bestandstype      | string  | Ja         | Type bestand (pdf, zip, etc)                 | PDF                                                                                                                                                                                                |
 | Type document     | string  | Ja         | Type document (keuze uit: bijlage, besluit, inventaris, verzoek) | Besluit                                                                                                                                                                                            |
@@ -78,7 +78,7 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
 
 ```json
 {
-    "id": "BZ-123",
+    "wob_id": "BZ123",
     "titel": "Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)",
     "verantwoordelijk": "Ministerie van Buitenlandse Zaken",
     "datum_ingediend": "22-12-2021",
@@ -86,26 +86,27 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
     "beschrijving": "Besluit op een verzoek om informatie over de samenwerkingsovereenkomsten tussen  de Nederlandse overheid en het World Economic Forum. Het verzoek is gedaan op basis van de Wet openbaarheid van bestuur (Wob).",
     "besluit": "Deels openbaar",
     "verdaagd": false,
+    "aantal_documenten": 6,
     "documenten": [
         {
-            "type": "Verzoek",
-            "document_nr": 0,
-        }
+            "documenttype": "Besluit",
+            "document_id": "BZ123-1",
+            "bestandsnaam": "Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
+            "bestandstype": "pdf",
+            "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
+            "grootte": "395 kB"
+        },
         {
-            "type": "Besluit",
-            "document_nr": 1,
+            "documenttype": "Inventarislijst",
+            "document_id": "BZ123-2",
             "bestandsnaam": "Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
             "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
+            "bestandstype": "pdf",
+            "grootte": "201 kB"
         },
         {
-            "type": "Inventarislijst",
-            "document_nr": 2,
-            "bestandsnaam": "Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
-            "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf"
-        },
-        {
-            "type": "Bijlage",
-            "document_nr": 3,
+            "documenttype": "Bijlage",
+            "document_id": "BZ123-3",
             "type_bijlage": "nota",
             "naam": "Decision for the Food System Initiative",
             "beoordeling": "Deels openbaar",
@@ -115,12 +116,13 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "19-03-2019",
             "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+bijj+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
+            "bestandstype": "pdf",
             "paginas": 7,
             "taal": "Engels"
         },
         {
-            "type": "Bijlage",
-            "document_nr": 4,
+            "documenttype": "Bijlage",
+            "document_id": "BZ123-4",
             "type_bijlage": "overeenkomst",
             "naam": "Samenwerkingsovereenkomst Tropical Forest Alliance phase 3",
             "beoordeling": "Deels openbaar",
@@ -129,12 +131,14 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "24-06-2021",
             "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+bijj+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF.pdf",
+            "bestandstype": "pdf",
             "paginas": 7,
-            "taal": "Nederlands"
+            "taal": "Nederlands",
+            "grootte": "1,1 MB"
         },
         {
-            "type": "Bijlage",
-            "document_nr": 5,
+            "documenttype": "Bijlage",
+            "document_id": "BZ123-5",
             "type_bijlage": "nota",
             "naam": "Grant decision Sustainable Investment Policy and Practice",
             "beoordeling": "Deels openbaar",
@@ -144,12 +148,13 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "28-07-2020",
             "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+2+bij+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF+%282%29.pdf",
+            "bestandstype": "pdf",
             "paginas": 5,
             "taal": "Engels"
         },
         {
-            "type": "Bijlage",
-            "document_nr": 6,
+            "documenttype": "Bijlage",
+            "document_id": "BZ123-6",
             "type_bijlage": "nota",
             "naam": "Extended grant decision Sustainable Investment Policy and Practice",
             "beoordeling": "Deels openbaar",
@@ -158,6 +163,7 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
             ],
             "datum": "24-06-2021",
             "url": "https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/02/besluit-op-wob-verzoeken-over-samenwerkingsovereenkomsten-nederlandse-overheid-en-het-world-economic-forum-wof/Bijlagen+2+bij+Wob-verzoeken+samenwerkingsovereenkomsten+met+NL+overheid+en+WOF+%282%29.pdf",
+            "bestandstype": "pdf",
             "paginas": 12,
             "taal": "Engels"
         }
@@ -167,9 +173,11 @@ Voorbeeld op basis van https://www.rijksoverheid.nl/documenten/wob-verzoeken/202
 
 Voorbeeld op basis van https://www.utrecht.nl/bestuur-en-organisatie/publicaties/openbaar-gemaakte-informatie-na-wob-verzoeken/wob-verzoek/2021-0790-wob-besluit-betreft-demonstratie-waku-waku/
 
+Voldoet niet volledig aan de eisen.
+
 ```json
 {
-    "id": "UT-201",
+    "wob_id": "UTR201",
     "titel": "2021-0790 Wob-besluit betreft demonstratie Waku Waku",
     "verantwoordelijk": "Gemeente Utrecht",
     "datum_ingediend": "07-10-2021",
@@ -179,9 +187,10 @@ Voorbeeld op basis van https://www.utrecht.nl/bestuur-en-organisatie/publicaties
     "verdaagd": true,
     "thema": "Wob-verzoeken vrije tijd",
     "geografisch_gebied": "Utrecht",
+    "aantal_documenten": 3,
     "documenten": [
         {
-            "document_nr": 1,
+            "document_nr": "UTR201-1",
             "bestandsnaam": "Wob-verzoek.pdf",
             "bestandstype": "PDF",
             "documenttype": "Verzoek",
@@ -191,7 +200,7 @@ Voorbeeld op basis van https://www.utrecht.nl/bestuur-en-organisatie/publicaties
             "scan": true
         },
         {
-            "document_nr": 2,
+            "document_nr": "UTR201-2",
             "bestandsnaam": "Wob-besluit.pdf",
             "bestandstype": "PDF",
             "documenttype": "Besluit",
@@ -200,7 +209,7 @@ Voorbeeld op basis van https://www.utrecht.nl/bestuur-en-organisatie/publicaties
             "download_datum": "03-03-2022"
         },
         {
-            "document_nr": 3,
+            "document_nr": "UTR201-3",
             "bestandsnaam": "20211019170012_ Gespreksverslag advocate van restauranthouder1.pdf",
             "bestandstype": "PDF",
             "documenttype": "Gespreksverslag",
