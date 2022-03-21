@@ -59,6 +59,7 @@
             "then": {
                 "properties": { 
                     "bijlagetype": {"type": "string"},
+                    "title": {"type": "string"},
                     "beoordeling": {"type": "string", "enum": ["Openbaar", "Deels openbaar", "Reeds openbaar", "Niet openbaar"]},
                     "weigeringsgrond": {"type": "array", "items": { "type": "string"}},
                     "vindplaats_reeds_openbaar": {"type": "string", "format": "uri"},
