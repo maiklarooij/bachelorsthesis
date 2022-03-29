@@ -1,0 +1,749 @@
+[
+    {
+      "verzoek_id": "NH-ZW-1",
+      "titel": "Zonneweide Jaagweg (sept, okt, nov, dec 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 9,
+      "beoordeling": "Deels openbaar",
+      "datum_besluit": "23-12-2021",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-1-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_sept_okt_nov_dec_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_sept_okt_nov_dec_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking Zonneweide Jaagweg sept okt nov dec 2021",
+          "grootte": "159kB"
+        },
+        {
+          "document_id": "NH-ZW-1-2",
+          "bestandsnaam": "Inventarisatielijst_sept_okt_nov_dec_2021_dossier_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/Inventarisatielijst_sept_okt_nov_dec_2021_dossier_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst sept okt nov dec 2021 dossier zonneweide Jaagweg",
+          "grootte": "68kB"
+        },
+        {
+          "document_id": "NH-ZW-1-3",
+          "bestandsnaam": "1_Memo_BO_verslag_gesprek_20210324.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/1_Memo_BO_verslag_gesprek_20210324.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "1. Memo BO verslag gesprek 20210324",
+          "grootte": "150kB", 
+          "datum": "19-07-2021",
+          "beoordeling": "Deels openbaar",
+          "weigeringsgrond": [
+              "10.2.e"
+          ],
+          "bijlagetype": "Memo",
+          "ontvanger": "Gedeputeerde Stigter"
+        },
+        {
+          "document_id": "NH-ZW-1-4",
+          "bestandsnaam": "2_Memo_BO_verslag_gesprek_20210421.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/2_Memo_BO_verslag_gesprek_20210421.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "2. Memo BO verslag gesprek 20210421",
+          "grootte": "162kB",
+          "datum": "19-07-2021",
+          "beoordeling": "Deels openbaar",
+          "weigeringsgrond": [
+            "10.2.e"
+          ],
+          "bijlagetype": "Memo",
+          "ontvanger": "Gedeputeerde Stigter"
+        },
+        {
+          "document_id": "NH-ZW-1-5",
+          "bestandsnaam": "3_Memo_BO_verslag_gesprek_20210520.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/3_Memo_BO_verslag_gesprek_20210520.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "3. Memo BO verslag gesprek 20210520",
+          "grootte": "160kB",
+          "datum": "19-07-2021",
+          "beoordeling": "Deels openbaar",
+          "weigeringsgrond": [
+            "10.2.e"
+          ],
+          "bijlagetype": "Memo",
+          "ontvanger": "Gedeputeerde Stigter"
+        },
+        {
+          "document_id": "NH-ZW-1-6",
+          "bestandsnaam": "4_Memo_BO_verslag_gesprek_20210907.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/4_Memo_BO_verslag_gesprek_20210907.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "4. Memo BO verslag gesprek 20210907",
+          "grootte": "178kB",
+          "datum": "20-07-2021",
+          "beoordeling": "Deels openbaar",
+          "weigeringsgrond": [
+            "10.2.e"
+          ],
+          "bijlagetype": "Memo",
+          "ontvanger": "Gedeputeerde Stigter"
+        },
+        {
+          "document_id": "NH-ZW-1-7",
+          "bestandsnaam": "5_Agenda_BO_18112021_gedeputeerde_Stigter_en_Koggenland_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_sept_okt_nov_dec_2021/5_Agenda_BO_18112021_gedeputeerde_Stigter_en_Koggenland_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "5. Agenda BO 18112021 gedeputeerde Stigter en Koggenland zonneweide Jaagweg",
+          "grootte": "157kB",
+          "datum": "17-11-2021",
+          "beoordeling": "Deels openbaar",
+          "weigeringsgrond": [
+            "10.2.e"
+          ],
+          "bijlagetype": "Agenda",
+          "ontvanger": "Gedeputeerde Stigter"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-2",
+      "titel": "Zonneweide Jaagweg (juni, juli, augustus 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 13,
+      "datum_besluit": "15-12-2020",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-2-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_jun_juli_aug_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_jun_juli_aug_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking Zonneweide Jaagweg jun juli aug 2021",
+          "grootte": "118kB"
+        },
+        {
+          "document_id": "NH-ZW-2-2",
+          "bestandsnaam": "Inventarisatielijst_juni_juli_aug_2021_dossier_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/Inventarisatielijst_juni_juli_aug_2021_dossier_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst juni juli aug 2021 dossier zonneweide Jaagweg",
+          "grootte": "4kB"
+        },
+        {
+          "document_id": "NH-ZW-2-3",
+          "bestandsnaam": "1_Memo_GS_juni_2021_definitief_tbv_bestuurders.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/1_Memo_GS_juni_2021_definitief_tbv_bestuurders.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "1. Memo GS juni 2021 definitief tbv bestuurders",
+          "grootte": "274kB"
+        },
+        {
+          "document_id": "NH-ZW-2-4",
+          "bestandsnaam": "2_GS_memo_20210706_intentieverklaring.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/2_GS_memo_20210706_intentieverklaring.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "2. GS memo 20210706 intentieverklaring",
+          "grootte": "161kB"
+        },
+        {
+          "document_id": "NH-ZW-2-5",
+          "bestandsnaam": "3_GS_nota_20210706_intentieovereenkomst.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/3_GS_nota_20210706_intentieovereenkomst.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "3. GS nota 20210706 intentieovereenkomst",
+          "grootte": "180kB"
+        },
+        {
+          "document_id": "NH-ZW-2-6",
+          "bestandsnaam": "4_GS_memo_20210706_intentieovereenkomst.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/4_GS_memo_20210706_intentieovereenkomst.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "4. GS memo 20210706 intentieovereenkomst",
+          "grootte": "158kB"
+        },
+        {
+          "document_id": "NH-ZW-2-7",
+          "bestandsnaam": "5_GS_Juridische_Bijlage_20210706_bij_Intentieovereenkomst_Zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/5_GS_Juridische_Bijlage_20210706_bij_Intentieovereenkomst_Zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "5. GS Juridische Bijlage 20210706 bij Intentieovereenkomst Zonneweide Jaagweg",
+          "grootte": "153kB"
+        },
+        {
+          "document_id": "NH-ZW-2-8",
+          "bestandsnaam": "6_Agenda_BO_09072021_gedeputeerde_Stigter_en_Koggenland_zonneweide_Jaagweg_geannoteerd.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/6_Agenda_BO_09072021_gedeputeerde_Stigter_en_Koggenland_zonneweide_Jaagweg_geannoteerd.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "6. Agenda BO 09072021 gedeputeerde Stigter en Koggenland zonneweide Jaagweg geannoteerd",
+          "grootte": "247kB"
+        },
+        {
+          "document_id": "NH-ZW-2-9",
+          "bestandsnaam": "7_GS_nota_20210706_intentieverklaring.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/7_GS_nota_20210706_intentieverklaring.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "7. GS nota 20210706 intentieverklaring",
+          "grootte": "247kB"
+        },
+        {
+          "document_id": "NH-ZW-2-10",
+          "bestandsnaam": "8_Staf_20210707.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/8_Staf_20210707.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "8. Staf 20210707",
+          "grootte": "143kB"
+        },
+        {
+          "document_id": "NH-ZW-2-11",
+          "bestandsnaam": "9_GS_Communicatieve_bijlage_intentieovereenkomst_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_juni_juli_augustus_2021/9_GS_Communicatieve_bijlage_intentieovereenkomst_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "9. GS Communicatieve bijlage intentieovereenkomst zonneweide Jaagweg",
+          "grootte": "194kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-3",
+      "titel": "Zonneweide Jaagweg (mei 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 9,
+      "datum_besluit": "21-06-2021",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-3-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_mei_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_mei_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking Zonneweide Jaagweg mei 2021",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-3-2",
+          "bestandsnaam": "Inventarisatielijst_mei_2021_dossier_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/Inventarisatielijst_mei_2021_dossier_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst mei 2021 dossier zonneweide Jaagweg",
+          "grootte": "70kB"
+        },
+        {
+          "document_id": "NH-ZW-3-3",
+          "bestandsnaam": "01_Persbericht_Gemeente_Koggenland_overweegt_zelf_realiseren_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/01_Persbericht_Gemeente_Koggenland_overweegt_zelf_realiseren_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "01 Persbericht Gemeente Koggenland overweegt zelf realiseren zonneweide Jaagweg",
+          "grootte": "105kB"
+        },
+        {
+          "document_id": "NH-ZW-3-4",
+          "bestandsnaam": "02_Zonneweide_Jaagweg_stand_van_zaken_up_date.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/02_Zonneweide_Jaagweg_stand_van_zaken_up_date.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "02 Zonneweide Jaagweg stand van zaken up-date",
+          "grootte": "162kB"
+        },
+        {
+          "document_id": "NH-ZW-3-5",
+          "bestandsnaam": "03_Agenda_BO_20052021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/03_Agenda_BO_20052021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "03 Agenda BO 20052021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg",
+          "grootte": "112kB"
+        },
+        {
+          "document_id": "NH-ZW-3-6",
+          "bestandsnaam": "04_Agenda_BO_20052021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/04_Agenda_BO_20052021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "04 Agenda BO 20052021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg geannoteerd",
+          "grootte": "129kB"
+        },
+        {
+          "document_id": "NH-ZW-3-7",
+          "bestandsnaam": "05_Stafnota_17_mei_2021_memo_GS.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_mei_2021/05_Stafnota_17_mei_2021_memo_GS.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "05 Stafnota 17 mei 2021 memo GS",
+          "grootte": "75kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-4",
+      "titel": "Zonneweide Jaagweg (april 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 8,
+      "datum_besluit": "19-05-2021",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-4-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_april_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_april_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking Zonneweide Jaagweg april 2021",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-4-2",
+          "bestandsnaam": "Inventarisatielijst_april_2021_dossier_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/Inventarisatielijst_april_2021_dossier_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst april 2021 dossier zonneweide Jaagweg",
+          "grootte": "57kB"
+        },
+        {
+          "document_id": "NH-ZW-4-3",
+          "bestandsnaam": "01_Agenda_BO_21042021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/01_Agenda_BO_21042021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "01 Agenda BO 21042021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg",
+          "grootte": "110kB"
+        },
+        {
+          "document_id": "NH-ZW-4-4",
+          "bestandsnaam": "02_Stafnota_BO_21042021_met_Koggenland.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/02_Stafnota_BO_21042021_met_Koggenland.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "02 Stafnota BO 21042021 met Koggenland",
+          "grootte": "73kB"
+        },
+        {
+          "document_id": "NH-ZW-4-5",
+          "bestandsnaam": "03_Memo_BO_21042021_met_Koggenland.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/03_Memo_BO_21042021_met_Koggenland.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "03 Memo BO 21042021 met Koggenland",
+          "grootte": "125kB"
+        },
+        {
+          "document_id": "NH-ZW-4-6",
+          "bestandsnaam": "04_Uitnodiging_voor_sprekers_en_programma_informatieavond_22_04_2021_Zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_april_2021/04_Uitnodiging_voor_sprekers_en_programma_informatieavond_22_04_2021_Zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "04 Uitnodiging voor sprekers en programma informatieavond 22-04-2021 Zonneweide Jaagweg",
+          "grootte": "37kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-5",
+      "titel": "Zonneweide Jaagweg (maart 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 8,
+      "datum_besluit": "22-04-2021",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-5-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_maart_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/Besluit_actieve_openbaarmaking_Zonneweide_Jaagweg_maart_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking Zonneweide Jaagweg maart 2021",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-5-2",
+          "bestandsnaam": "Inventarisatielijst_maart_2021_dossier_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/Inventarisatielijst_maart_2021_dossier_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst maart 2021 dossier zonneweide Jaagweg",
+          "grootte": "70kB"
+        },
+        {
+          "document_id": "NH-ZW-5-3",
+          "bestandsnaam": "02_stafnota_20210315.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/02_stafnota_20210315.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "02 stafnota 20210315",
+          "grootte": "77kB"
+        },
+        {
+          "document_id": "NH-ZW-5-4",
+          "bestandsnaam": "03_stafnota_20210322.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/03_stafnota_20210322.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "03 stafnota 20210322",
+          "grootte": "78kB"
+        },
+        {
+          "document_id": "NH-ZW-5-5",
+          "bestandsnaam": "04_Stafnota_22032021_BO_24032021_met_Koggenland.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/04_Stafnota_22032021_BO_24032021_met_Koggenland.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "04 Stafnota 22032021 BO 24032021 met Koggenland",
+          "grootte": "73kB"
+        },
+        {
+          "document_id": "NH-ZW-5-6",
+          "bestandsnaam": "05_Agenda_BO_24032021_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_maart_2021/05_Agenda_BO_24032021_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "05 Agenda BO 24032021 Stigter en Koggenland voorgenomen zonneweide Jaagweg geannoteerd",
+          "grootte": "117kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-6",
+      "titel": "Zonneweide Jaagweg (februari 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 7,
+      "datum_besluit": "23-03-2021",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-6-1",
+          "bestandsnaam": "Memo_BO_verslag_gesprek_05022021_Koggenland_voorgenomen_realisatie_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_februari_2021/Memo_BO_verslag_gesprek_05022021_Koggenland_voorgenomen_realisatie_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Memo BO verslag gesprek 05022021 Koggenland voorgenomen realisatie zonneweide Jaagweg",
+          "grootte": "146kB"
+        },
+        {
+          "document_id": "NH-ZW-6-2",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_januari_februari.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_februari_2021/Besluit_actieve_openbaarmaking_januari_februari.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking januari / februari",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-6-3",
+          "bestandsnaam": "Inventarisatielijst_januari_februari.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_februari_2021/Inventarisatielijst_januari_februari.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst januari / februari",
+          "grootte": "77kB"
+        },
+        {
+          "document_id": "NH-ZW-6-4",
+          "bestandsnaam": "Agenda_BO_05022021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_februari_2021/Agenda_BO_05022021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Agenda BO 05022021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-6-5",
+          "bestandsnaam": "Agenda_BO_05022021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_februari_2021/Agenda_BO_05022021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Agenda BO 05022021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg geannoteerd",
+          "grootte": "135kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-7",
+      "titel": "Zonneweide Jaagweg (januari 2021)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 8,
+      "datum_besluit": "09-03-2021",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-7-1",
+          "bestandsnaam": "Besluit_actieve_openbaarmaking_januari_februari.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Besluit_actieve_openbaarmaking_januari_februari.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Besluit actieve openbaarmaking januari / februari",
+          "grootte": "117kB"
+        },
+        {
+          "document_id": "NH-ZW-7-2",
+          "bestandsnaam": "Inventarisatielijst_januari_februari.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Inventarisatielijst_januari_februari.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Inventarisatielijst januari / februari",
+          "grootte": "77kB"
+        },
+        {
+          "document_id": "NH-ZW-7-3",
+          "bestandsnaam": "Agenda_BO_21012021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Agenda_BO_21012021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Agenda BO 21012021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg",
+          "grootte": "114kB"
+        },
+        {
+          "document_id": "NH-ZW-7-4",
+          "bestandsnaam": "Agenda_BO_21012021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Agenda_BO_21012021_gedeputeerde_Stigter_en_Koggenland_voorgenomen_zonneweide_Jaagweg_geannoteerd.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Agenda BO 21012021 gedeputeerde Stigter en Koggenland voorgenomen zonneweide Jaagweg geannoteerd",
+          "grootte": "182kB"
+        },
+        {
+          "document_id": "NH-ZW-7-5",
+          "bestandsnaam": "Memo_BO_verslag_gesprek_20210121_Koggenland_voorgenomen_realisatie_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Memo_BO_verslag_gesprek_20210121_Koggenland_voorgenomen_realisatie_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Memo BO verslag gesprek 20210121 Koggenland voorgenomen realisatie zonneweide Jaagweg",
+          "grootte": "145kB"
+        },
+        {
+          "document_id": "NH-ZW-7-6",
+          "bestandsnaam": "Presentatie_OMB_januari_2021.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_januari_2021/Presentatie_OMB_januari_2021.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Presentatie OMB januari 2021",
+          "grootte": "952kB"
+        }
+      ]
+    },
+    {
+      "verzoek_id": "NH-ZW-8",
+      "titel": "Zonneweide Jaagweg (2020)",
+      "thema": "Zonneweide Jaagweg",
+      "verantwoordelijk": "Gedeputeerde Staten van Noord-Holland",
+      "aantal_documenten": 10,
+      "datum_besluit": "15-12-2020",
+      "beoordeling": "Deels openbaar",
+      "verdaagd": false,
+      "documenten": [
+        {
+          "document_id": "NH-ZW-8-1",
+          "bestandsnaam": "GS_nota_actieve_openbaarmaking_tbv_GS_15_december_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/GS_nota_actieve_openbaarmaking_tbv_GS_15_december_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "GS nota actieve openbaarmaking tbv GS 15 december 2020",
+          "grootte": "69kB"
+        },
+        {
+          "document_id": "NH-ZW-8-2",
+          "bestandsnaam": "Bijlage_1_memo_Pilot_Actieve_Openbaarmaking_tbv_GS_15_december_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Bijlage_1_memo_Pilot_Actieve_Openbaarmaking_tbv_GS_15_december_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Bijlage 1 - memo Pilot Actieve Openbaarmaking tbv GS 15 december 2020",
+          "grootte": "160kB"
+        },
+        {
+          "document_id": "NH-ZW-8-3",
+          "bestandsnaam": "Bijlage_2_Beoordelingsschema_pilot_tbv_staf_7_december_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Bijlage_2_Beoordelingsschema_pilot_tbv_staf_7_december_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Bijlage 2 - Beoordelingsschema pilot tbv staf 7 december 2020",
+          "grootte": "114kB"
+        },
+        {
+          "document_id": "NH-ZW-8-4",
+          "bestandsnaam": "Verslag_bestuurlijk_overleg_26_november_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Verslag_bestuurlijk_overleg_26_november_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Verslag bestuurlijk overleg 26 november 2020",
+          "grootte": "120kB"
+        },
+        {
+          "document_id": "NH-ZW-8-5",
+          "bestandsnaam": "Verslag_bestuurlijk_overleg_17_september_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Verslag_bestuurlijk_overleg_17_september_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Verslag bestuurlijk overleg 17 september 2020",
+          "grootte": "160kB"
+        },
+        {
+          "document_id": "NH-ZW-8-6",
+          "bestandsnaam": "Bestuurlijk_overleg_13_augustus_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Bestuurlijk_overleg_13_augustus_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Verslag bestuurlijk overleg 13 augustus 2020",
+          "grootte": "109kB"
+        },
+        {
+          "document_id": "NH-ZW-8-7",
+          "bestandsnaam": "Verslag_marktconsultatie_zonneweide_Jaagweg.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Verslag_marktconsultatie_zonneweide_Jaagweg.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Verslag marktconsultatie zonneweide Jaagweg",
+          "grootte": "210kB"
+        },
+        {
+          "document_id": "NH-ZW-8-8",
+          "bestandsnaam": "Bestuurlijk_overleg_23_januari_2020.pdf",
+          "bestandstype": "pdf",
+          "documenttype": "Vrijgegeven document",
+          "url": "https://www.noord-holland.nl/Loket/Pilot_actieve_openbaarmaking/Documenten/Zonneweide_Jaagweg_2020/Bestuurlijk_overleg_23_januari_2020.pdf",
+          "download_datum": "29-03-2022",
+          "taal": "Nederlands",
+          "titel": "Verslag bestuurlijk overleg 23 januari 2020",
+          "grootte": "110kB"
+        }
+      ]
+    }
+  ]
