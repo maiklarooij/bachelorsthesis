@@ -5,58 +5,64 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 ## Geheel Wob-verzoek
 
 
-| Veld               | Engels | Type    | Verplicht? | Omschrijving                                              | Voorbeeld                                                                                                                                  |
-|--------------------|---------|-------|------------|-----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------|
-| verzoek_id      | request_id |  number     | Ja         | Uniek ID                                                  | 3928                                                                                                                                       |
-| titel | title  | string     | Ja         | Titel Wob-verzoek                                         | Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)                           |
-| thema | theme | string | Nee | Eventueel thema van het Wob-verzoek | Wob-verzoeken vrije tijd |
-| verantwoordelijk | responsible | string     | Ja         | Verantwoordelijke voor het behandelen van het Wob-verzoek | Ministerie van Buitenlandse Zaken                                                                                                          |
-| datum_ingediend | file_date | date    | Ja         | Datum van indienen Wob-verzoek                            | 22-12-2021                                                                                                                                 |
-| datum_besluit | response_date  | date    | Ja         | Datum van reactie/besluit Wob-verzoek                     | 02-02-2022                                                                                                                                 |
-| beoordeling   | valuation     | string     | Ja         | Beoordeling geheel Wob-verzoek                            | Deels openbaar |
-| verdaagd | adjourned      | boolean     | Ja         | Geeft aan of het besluit verdaagd is (ja/nee)             | False |
-| beschrijving | description       | string     | Nee        | Beschrijving Wob-verzoek                                  | Besluit op een verzoek om informatie over de samenwerkingsovereenkomsten tussen de Nederlandse overheid en het World Economic Forum (WEF). |
-| documenten         | documenten | array   | Nee | Lijst met alle documenten. Elk document is een object. | -
-| intern_id  | internal_id | string/number | Nee        | Volgnummer voor intern gebruik                            | BUZA-129                                                                                                                                   |
-| verzoeker | requester     | string     | Nee        | Naam verzoeker                                            | Follow the Money                                                                                                                           |
-| geografisch_gebied | geographical_area | string     | Nee        | Naam geografisch gebied                                   | Den Haag                                                                                                                                   |
-| bag_id             | bag_id | number     | Nee        | Basisregistratie Adressen en Gebouwen ID                  | 2389120312367                                                                                                                              |
-| bgt_id | bgt_id           | number     | Nee        | Basisregistratie Grootschalige Topografie ID              | 3243134                                                                                                                                    |
-| longitude  | longitude   | number   | Nee        | Oost-west positie                                         | 103.800670                                                                                                                                 |
-| latitude    | latitude       | number   | Nee        | Noord-zuid positie                                        | 1.320660                                                                                                                                   |
-| postcodegebied     | zipcode_area | string     | Nee        | Postcodenummers                                           | 3825                                                                                                                                       |
-| aantal_documenten | number_documents | number | Nee | Aantal vrijgegeven documenten | 5 |
+|Veld|Engels|Namespace|Type|Verplicht?|Omschrijving|Voorbeeld|
+|:----|:----|:----|:----|:----|:----|:----|
+|identifier|identifier|DCMI|number|Ja|Uniek ID|3928|
+|titel|title|DCMI|string|Ja|Titel Wob-verzoek|Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)|
+|type|type|DCMI|string|Ja|2 keuzes: ‘Verzoek’ of ‘Actieve openbaarmaking’|Verzoek|
+|url|url|WOO|string|Ja|URL naar publicatie|https://www.rijksoverheid.nl/documenten/wob-verzoeken/2022/03/31/besluit-op-wob-verzoek-over-een-eu-rapport-over-gujarat-2002|
+|thema|topic|WOO/FOAF|string|Nee|Eventueel thema van het Wob-verzoek|Wob-verzoeken vrije tijd|
+|idThema|idTopic|WOO|string|Nee|Uniek ID van het thema|VT01|
+|behandeldDoor|handledBy|WOO|string|Ja|Verantwoordelijke voor het behandelen van het Wob-verzoek|Ministerie van Buitenlandse Zaken|
+|datumIngediend|fileDate|WOO|date|Ja, bij type = ‘Verzoek’|Datum van indienen Wob-verzoek (ISO 8601)|2021-12-04|
+|datumBesluit|decisionDate|WOO|date|Ja|Datum van reactie/besluit Wob-verzoek (ISO 8601)|2022-02-02|
+|beoordeling|valuation|WOO|string|Ja|Beoordeling geheel Wob-verzoek|Deels openbaar|
+|isVerdaagd|isAdjourned|WOO|boolean|Ja, bij type = ‘Verzoek’|Geeft aan of het besluit verdaagd is (ja/nee)|False|
+|beschrijving|description|DCMI|string|Nee|Beschrijving Wob-verzoek|Besluit op een verzoek om informatie over de samenwerkingsovereenkomsten tussen de Nederlandse overheid en het World Economic Forum (WEF).|
+|documenten|documents|WOO|array|Nee|Lijst met alle documenten. Elk document is een object.|-|
+|idIntern|idInternal|WOO|string/number|Nee|Volgnummer voor intern gebruik|BUZA-129|
+|verzoeker|requester|WOO|string|Nee|Naam verzoeker|Follow the Money|
+|geografischGebied|geographicalArea| |string|Nee|Naam geografisch gebied|Den Haag|
+|idBag|idBag| |number|Nee|Basisregistratie Adressen en Gebouwen ID|2389120312367|
+|idBgt|idBgt| |number|Nee|Basisregistratie Grootschalige Topografie ID|3243134|
+|longitude|longitude| |number|Nee|Oost-west positie|103.800670|
+|latitude|latitude| |number|Nee|Noord-zuid positie|1.320660|
+|postcodegebied|zipcodeArea| |string|Nee|Postcodenummers|3825|
+|aantalDocumenten|numberDocuments|WOO|number|Nee|Aantal vrijgegeven documenten|5|
+
 
 ### Document (besluit, verzoek, inventaris, bijlage)
 
-| Veld              | Engels | Type | Verplicht? | Omschrijving                                 | Voorbeeld                                                                                                                                                                                          |
-|-------------------|----------|------|------------|----------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| document_id | document_id    | number  | Ja         | Uniek Document ID                 | 3                                                                                                                                                                                                  |
-| bestandsnaam      | filename | string  | Ja         | Bestandsnaam                         | 2021-105+Besluit+Wob-verzoek++De+Vaandeldrager.pdf                                                                                                                                                             |
-| bestandstype      | filetype | string  | Ja         | Type bestand (pdf, zip, etc)                 | PDF                                                                                                                                                                                                |
-| documenttype     | document_type | string  | Ja         | Type document (keuze uit: bijlage, besluit, inventaris, verzoek) | Besluit                                                                                                                                                                                            |
-| url | url | string  | Ja         | URL naar bestand                            | https://www.rijksoverheid.nl/documenten/wob-verzoeken/2022/02/25/besluit-wob-verzoek-schilderij-de-vaandeldager-over-adviezen-aankoop |
-| aantal_paginas          | number_pages | number  | Ja         | Aantal pagina's bestand                      | 3                                                                                                                                                                                                  |                                      |
-| aantal_woorden | number_words | number | Nee | Aantal woorden in bestand | 291 |
-| scan | scan | boolean | Nee | Is het document ingescand? | False |
-| aantal_tekstpaginas | number_textpages | number | Nee | Aantal pagina's in bestand met tekst | 2 |
-| download_datum | download_date |  date | Nee | Gedownload op | 01-03-2022 |
-| taal | language |                              | string      | Nee                                                             | Taal van het document                                                                  | Nederlands  |
-| grootte | size | string | Nee | Grootte van het bestand | 392 kB |
+|Veld|Engels|Namespace|Type|Verplicht?|Omschrijving|Voorbeeld|
+|:----|:----|:----|:----|:----|:----|:----|
+|identifier|identifier|DCMI|number|Ja|Uniek Document ID|3|
+|titel|title|DCMI|string|Ja|Titel van het document|Besluit Wob verzoek De Vaandeldrager|
+|bestandsNaam|fileName|FTM|string|Ja|Bestandsnaam|2021-105+Besluit+Wob-verzoek++De+Vaandeldrager.pdf|
+|bestandsExtensie|fileExtension|FTM|string|Ja|Type bestand (pdf, zip, etc)|PDF|
+|mimeType|mimeType|FTM|string|Ja|MIME type van het bestand|application/pdf|
+|documentType|documentType|WOO|string|Ja|Type document (keuze uit: bijlage, besluit, inventaris, verzoek)|Besluit|
+|url|url|WOO|string|Ja|URL naar bestand|https://www.rijksoverheid.nl/documenten/wob-verzoeken/2022/02/25/besluit-wob-verzoek-schilderij-de-vaandeldager-over-adviezen-aankoop|
+|aantalPaginas|numberPages|WOO|number|Ja|Aantal pagina's bestand|3|
+|aantalWoorden|numberWords|WOO|number|Nee|Aantal woorden in bestand|291|
+|isScan|isScan|WOO|boolean|Nee|Is het document ingescand (en dus niet leesbaar voor een computer)? |False|
+|aantalTekstpaginas|numberTextPages|WOO|number|Nee|Aantal pagina's in bestand met tekst|2|
+|datumDownload|downloadDate|WOO|date|Nee|Gedownload op datum (ISO 8601)|2022-03-01|
+|taal|language|FTM|string|Nee|Taal van het document (ISO-639-3 standaard)|nld|
+|bestandsGrootte|fileSize|FTM|string|Nee|Grootte van het bestand|392 kB|
+|crawler|crawler|FTM|string|Nee|Gebruikte crawler om het bestand op te halen|webCrawler 2.0|
+
 
 ### Extra velden voor vrijgegeven document
 
-| Veld            | Engels         | Type     | Verplicht?                                                     | Omschrijving                                                                           | Voorbeeld                                                                                                                                                                                          |
-|-----------------------------------|-----------|----------|----------------------------------------------------------------|----------------------------------------------------------------------------------------|----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| bijlagetype   | annex_type                      | string      | Ja                                                             | Type vrijgegeven document | E-Mail | 
-| titel | title | string | Nee | Titel van het document, indien aanwezig | Gespreksverslag advocate restauranthouder |                                                                                                                                                                       
-| beoordeling | valuation |                       | string      | Ja                                                             | Beoordeling van het document (deels openbaar, openbaar, niet openbaar, reeds openbaar) | Openbaar                                                                                                                                                                                           |
-| weigeringsgrond | ground_of_refusal      | array | Ja (enkel bij beoordeling 'deels openbaar' en 'niet openbaar') | Vindplaats weigeringsgronden bij niet geheel openbaar document                         | 10.1.b; 10.2.e                                                                                                                                                                                     |
-| vindplaats_reeds_openbaar | already_public_location string      | Ja (enkel bij beoordeling 'reeds openbaar')                    | Vindplaats (URL) van reeds openbare documenten                                               | https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/07/besluit-op-wob-verzoek-over-openbaarmaking-van-dossier-hoe-werkt-szw/wob-besluit+hoe+werkt+SZW+dossier.pdf |
-| afzender | originator          | string      | Nee                                                             | Afzender bijlage                                                                       | Ministerie van Buitenlandse Zaken                                                                                                                                                                  |
-| ontvanger | recipient      |    | string      | Nee                                                             | Ontvanger bijlage                                                                      | World Economic Forum                                                                                                                                                                               |
-| datum  | date |                           | date     | Ja                                                             | Datum gecreëerd                                                                        | 19-03-2019                                                                                                                                                                                         |                                                                                                                                                                                       |
-| toelichting | commentary            | string      | Nee                                                            | Eventuele toelichtingen                                                                | Document verstuurd door medewerker BuZa namens minister                                                                                                                                            |
+|Veld|Engels|Namespace|Type|Verplicht?|Omschrijving|Voorbeeld|
+|:----|:----|:----|:----|:----|:----|:----|
+|bijlageType|annexType|WOO|string|Ja|Type vrijgegeven document|E-Mail|
+|beoordeling|valuation|WOO|string|Ja|Beoordeling van het document (deels openbaar, openbaar, niet openbaar, reeds openbaar)|Deels openbaar|
+|weigeringsGronden|groundsOfRefusal|WOO|array|Ja (enkel bij beoordeling 'deels openbaar' en 'niet openbaar')|Vindplaats weigeringsgronden bij niet geheel openbaar document|10.1.b; 10.2.e|
+|vindplaatsReedsOpenbaar|alreadyPublicLocation |WOO|string|Ja (enkel bij beoordeling 'reeds openbaar')|Vindplaats (URL) van reeds openbare documenten|https://www.rijksoverheid.nl/binaries/rijksoverheid/documenten/wob-verzoeken/2022/02/07/besluit-op-wob-verzoek-over-openbaarmaking-van-dossier-hoe-werkt-szw/wob-besluit+hoe+werkt+SZW+dossier.pdf|
+|afzender|originator|WOO|string|Nee|Afzender bijlage|Ministerie van Buitenlandse Zaken|
+|ontvanger|recipient|WOO|string|Nee|Ontvanger bijlage|Officier van Justitie|
+|datum|date|DCMI|date|Ja|Datum gecreëerd (ISO 8601)|2021-09-14|
 
 ## Formaat
 
