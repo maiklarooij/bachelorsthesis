@@ -133,75 +133,7 @@
     max-width: 80%;
   }
   
-  
-  /* ==========================================================================
-     #BUTTON
-     ========================================================================== */
-  .btn {
-    display: inline-block;
-    line-height: 50px;
-    padding: 0 30px;
-    -webkit-transition: all 0.4s ease;
-    -o-transition: all 0.4s ease;
-    -moz-transition: all 0.4s ease;
-    transition: all 0.4s ease;
-    cursor: pointer;
-    font-size: 15px;
-    text-transform: capitalize;
-    font-weight: 700;
-    color: #fff;
-    font-family: inherit;
-  }
-  
-  .btn--radius {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
-  }
-  
-  .btn--radius-2 {
-    -webkit-border-radius: 5px;
-    -moz-border-radius: 5px;
-    border-radius: 5px;
-  }
-  
-  .btn--pill {
-    -webkit-border-radius: 20px;
-    -moz-border-radius: 20px;
-    border-radius: 20px;
-  }
-  
-  .btn--green {
-    background: #57b846;
-  }
-  
-  .btn--green:hover {
-    background: #4dae3c;
-  }
-  
-  .btn--blue {
-    background: #4272d7;
-  }
-  
-  .btn--blue:hover {
-    background: #3868cd;
-  }
-  
-  .btn--blue-2 {
-    background: #2c6ed5;
-  }
-  
-  .btn--blue-2:hover {
-    background: #185ac1;
-  }
-  
-  .btn--red {
-    background: #ff4b5a;
-  }
-  
-  .btn--red:hover {
-    background: #eb3746;
-  }
+
   
   /* ==========================================================================
      #TITLE
@@ -224,10 +156,8 @@
      #CARD
      ========================================================================== */
   .card {
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
     background: #fff;
+    border: none;
   }
   
   .card-6 {
@@ -241,7 +171,6 @@
   .card-6 .card-body {
     background: #fff;
     position: relative;
-    border: 1px solid #e5e5e5;
     border-bottom: none;
     padding: 30px;
     -webkit-border-top-left-radius: 3px;
@@ -261,7 +190,6 @@
     width: 0;
     position: absolute;
     pointer-events: none;
-    border-color: rgba(255, 255, 255, 0);
     border-bottom-color: #fff;
     border-width: 10px;
   }
@@ -287,6 +215,21 @@
 
   label {
     background-image: url("https://s2.svgbox.net/pen-brushes.svg?ic=brush-10&color=1a1a1a");
-    padding:  2px  6px;
+    padding:  2px  30px;
     color: white;
+  }
+
+  .infobox {
+    padding: 20px;
+  }
+
+  .nav-text {
+    font-size: xx-large;
+    color: #ffffff;
+    text-transform: uppercase;
+    font-weight: 700;
+  }
+
+  .emoji {
+    font-family: "Apple Color Emoji","Segoe UI Emoji",NotoColorEmoji,"Segoe UI Symbol","Android Emoji",EmojiSymbols,"EmojiOne Mozilla";
   }

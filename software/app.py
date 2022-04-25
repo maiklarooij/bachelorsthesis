@@ -25,6 +25,13 @@ def start():
     # Render start template
     return render_template("index.html")
 
+@app.route("/create_publication", methods=["GET"])
+def create_publication():
+    """ Main page """
+
+    # Render start template
+    return render_template("createjson.html")
+
 @app.route("/create_json", methods=["POST"])
 def create_json():
     """
@@ -53,11 +60,27 @@ def download_json():
             mimetype='application/json',
             headers={'Content-Disposition':f'attachment;filename={filename}'})
 
+@app.route("/upload_publication", methods=["GET", "POST"])
+def upload_json():
+    if request.method == 'GET':
+        return render_template('uploadjson.html')
+    else:
+        metadata_object = json.load(request.files['file'])
+        validation_result = validate_metadata(metadata_object)
+
+        if validation_result == True:
+            return generate_resultpage(metadata_object)
+        else:
+            return render_template('invalidpage.html', errors=validation_result, metadata_string=json.dumps(metadata_object, indent=4))
+
+
 def generate_resultpage(metadata_object):
 
     doc_table = pd.DataFrame(metadata_object['documents']).to_html(border=0, classes="table table-striped")
+    infobox = pd.DataFrame.from_dict(metadata_object, orient="index").drop('documents').to_html(border=0, classes="table table-striped", header=False)
     metadata_string = json.dumps(metadata_object, indent=4)
 
     return render_template('validpage.html', metadata=metadata_object, 
                                              table=doc_table, 
-                                             metadata_string=metadata_string)
+                                             metadata_string=metadata_string,
+                                             infobox=infobox)

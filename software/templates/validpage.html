@@ -1,23 +1,36 @@
 {% extends 'layout.html' %}
 {% block header %}
 
-<h2 class="title">Result</h2>
+<h2 class="title nav-text">Result.</h2>
 
 {% endblock %}
 
 {% block content %}
 
-    <label><h2>Publication</h2></label>
-    <p>{{ metadata['title'] }} is generated successfully and is valid!</p>
+    <div class="row">
+        <div class="col-8">
+            <label><h2>&#9989; Success</h2></label>
+            <p>{{ metadata['title'] }} is generated successfully and is valid!</p>
 
-    <form method="POST" action="download_json">
-        <button name="metadatastring" class="btn btn-primary" type="submit" value="{{ metadata_string }}">Download JSON</button>
-    </form>
+            <form method="POST" action="download_json" style="margin-bottom: 15px">
+                <button name="metadatastring" class="btn btn-primary" type="submit" value="{{ metadata_string }}">Download JSON</button>
+            </form>
+            
+            <label><h2>&#128203; Documents (inventory list)</h2></label>
+            <div style="overflow-x:auto;">
+                {{ table|safe }}
+            </div>
+
+            <button name="metadatastring" class="btn btn-primary" onclick="tableToCSV()">Download inventory list CSV</button>
+        </div>
+        <div class="col-4 border-left border-dark infobox">
+            <label><h2><span class="emoji">&#x2139;</span> Publication info</h2></label>
+            <div style="overflow-x:auto">
+                {{ infobox|safe }}
+            </div>
+        </div>
+    </div>
     
-    <label><h2>Documents (inventory list)</h2></label>
-    {{ table|safe }}
-
-    <button name="metadatastring" class="btn btn-primary" onclick="tableToCSV()">Download inventory list CSV</button>
 
 
 {% endblock %}

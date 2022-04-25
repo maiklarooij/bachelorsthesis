@@ -23,6 +23,8 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 |idIntern|idInternal|WOO|string/number|Nee|Volgnummer voor intern gebruik|BUZA-129|
 |verzoeker|requester|WOO|string|Nee|Naam verzoeker|Follow the Money|
 |aantalDocumenten|numberDocuments|WOO|number|Nee|Aantal vrijgegeven documenten|5|
+|verkregenVan|retrievedAt|
+|firstRecipient
 
 
 ### Document (besluit, verzoek, inventaris, bijlage)
