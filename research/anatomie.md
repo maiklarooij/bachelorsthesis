@@ -10,7 +10,7 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 |identifier|identifier|DCMI|number|Ja|Uniek ID|3928|
 |titel|title|DCMI|string|Ja|Titel Wob-verzoek|Besluit op Wob-verzoeken over samenwerkingsovereenkomsten Nederlandse overheid en het World Economic Forum (WOF)|
 |type|type|DCMI|string|Ja|2 keuzes: ‘Verzoek’ of ‘Actieve openbaarmaking’|Verzoek|
-|url|url|WOO|string|Ja|URL naar publicatie|https://www.rijksoverheid.nl/documenten/wob-verzoeken/2022/03/31/besluit-op-wob-verzoek-over-een-eu-rapport-over-gujarat-2002|
+|bronUrl|sourceUrl|WOO|string|Ja|URL naar publicatie|https://www.rijksoverheid.nl/documenten/wob-verzoeken/2022/03/31/besluit-op-wob-verzoek-over-een-eu-rapport-over-gujarat-2002|
 |thema|topic|WOO/FOAF|string|Nee|Eventueel thema van het Wob-verzoek|Wob-verzoeken vrije tijd|
 |idThema|idTopic|WOO|string|Nee|Uniek ID van het thema|VT01|
 |behandeldDoor|handledBy|WOO|string|Ja|Verantwoordelijke voor het behandelen van het Wob-verzoek|Ministerie van Buitenlandse Zaken|
@@ -22,12 +22,6 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 |documenten|documents|WOO|array|Nee|Lijst met alle documenten. Elk document is een object.|-|
 |idIntern|idInternal|WOO|string/number|Nee|Volgnummer voor intern gebruik|BUZA-129|
 |verzoeker|requester|WOO|string|Nee|Naam verzoeker|Follow the Money|
-|geografischGebied|geographicalArea| |string|Nee|Naam geografisch gebied|Den Haag|
-|idBag|idBag| |number|Nee|Basisregistratie Adressen en Gebouwen ID|2389120312367|
-|idBgt|idBgt| |number|Nee|Basisregistratie Grootschalige Topografie ID|3243134|
-|longitude|longitude| |number|Nee|Oost-west positie|103.800670|
-|latitude|latitude| |number|Nee|Noord-zuid positie|1.320660|
-|postcodegebied|zipcodeArea| |string|Nee|Postcodenummers|3825|
 |aantalDocumenten|numberDocuments|WOO|number|Nee|Aantal vrijgegeven documenten|5|
 
 

@@ -1,156 +1,124 @@
-<!DOCTYPE html>
-<html lang="en">
+{% extends 'layout.html' %}
+{% block header %}
+    <h2 class="title">Fill in metadata</h2>
+{% endblock %}
 
-<head>
-    <!--   meta tags-->
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <meta name="description" content="Colorlib Templates">
-    <meta name="author" content="Colorlib">
-    <meta name="keywords" content="Colorlib Templates">
-
-    <!-- Title Page-->
-    <title>Maik's thesis project</title>
-
-    <!-- Font special for pages-->
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i" rel="stylesheet">
-
-    <!-- Bootstrap-->
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-
-    <!-- Vanilla Datepicker CSS -->
-    <link rel='stylesheet' href='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/css/datepicker.min.css'>
-
-    <!-- Main CSS-->
-    <link href="../static/main.css" rel="stylesheet" media="all">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>  
-</head>
-
-<body>
-    <div class="page-wrapper bg-color p-t-100 p-b-50">
-        <div class="wrapper wrapper--w80">
-            <div class="card card-6">
-                <div class="card-heading">
-                    <h2 class="title">Fill in metadata</h2>
+{% block content %}
+    <form method="POST" action="create_json" class="form-big" enctype="multipart/form-data">
+        <div id="request-level">
+            <!-- Basic info row-->
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="title">Titel</label>
+                    <input class="form-control" type="text" name="title" placeholder="Besluit op Wob-verzoek inzake..."  >
                 </div>
-                <div class="card-body">
-                    <form method="POST" action="create_json" class="form-big" enctype="multipart/form-data">
-                        <div id="request-level">
-                            <!-- Basic info row-->
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="title">Titel</label>
-                                    <input class="form-control" type="text" name="title" placeholder="Besluit op Wob-verzoek inzake..."  >
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="identifier">Uniek ID</label>
-                                    <input class="form-control" type="text" name="identifier" placeholder="ID">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="type">Type</label>
-                                    <select class="form-control" name="type">
-                                        <option disabled selected value> -- selecteer een optie -- </option>
-                                        <option>Verzoek</option>
-                                        <option>Actieve openbaarmaking</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <!-- Secondary info row-->
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="description">Beschrijving</label>
-                                    <input class="form-control" type="text" name="description" placeholder="Beschrijving">
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="topic">Thema</label>
-                                    <input class="form-control" type="text" name="topic" placeholder="Thema">
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="idTopic">Thema ID</label>
-                                    <input class="form-control" type="text" name="idTopic" placeholder="Thema ID">
-                                </div>
-                            </div>
-
-                            <!-- URL info row-->
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="url">URL naar publicatie</label>
-                                    <input class="form-control" type="text" name="url" placeholder="URL"  >
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="requester">Verzoeker</label>
-                                    <input class="form-control" type="text" name="requester" placeholder="Verzoeker">
-                                </div>
-                                <div class="form-group col-md-2">
-                                    <label for="idInternal">Intern ID</label>
-                                    <input class="form-control" type="text" name="topic" placeholder="Intern ID">
-                                </div>
-                            </div>
-
-                            <!-- Date row-->
-                            <div class="row">
-                                <div class="form-group col-md-6">
-                                    <label for="requestDate">Verzoekdatum</label>
-                                    <input class="datepicker_input form-control" type="text" name="requestDate" placeholder="DD/MM/YYYY">
-                                </div>
-                                <div class="form-group col-md-6">
-                                    <label for="decisionDate">Besluitdatum</label>
-                                    <input class="datepicker_input form-control" type="text" name="decisionDate" placeholder="DD/MM/YYYY"  >
-                                </div>
-                            </div>
-
-                            <!-- Decision row-->
-                            <div class="row">
-                                <div class="form-group col-md-4">
-                                    <label for="handledBy">Behandeld door</label>
-                                    <input class="form-control" type="text" name="handledBy" placeholder="Behandeld door"  >
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="valuation">Beoordeling</label>
-                                    <select class="form-control" name="valuation" >
-                                        <option disabled selected value> -- selecteer een optie -- </option>
-                                        <option>Openbaar</option>
-                                        <option>Deels openbaar</option>
-                                        <option>Niet openbaar</option>
-                                        <option>Reeds openbaar</option>
-                                    </select>
-                                </div>
-                                <div class="form-group col-md-4">
-                                    <label for="adjourned">Verdaagd (indien van toepassing)</label>
-                                    <select class="form-control" name="adjourned">
-                                        <option disabled selected value> -- selecteer een optie -- </option>
-                                        <option>Ja</option>
-                                        <option>Nee</option>
-                                    </select>
-                                </div>
-                            </div>
-
-                            <button style="float: right" type="button" class="btn btn-primary" onclick="createDocuments()">Volgende stap</button>
-                        </div>
-
-                        <div id="document-level" style="display: none">
-                            <div class="input_fields_wrap">
-                            </div>
-                            <div><button style="margin-bottom: 30px" type="button" class="btn btn-primary" id="newdocument" onclick="addDocument()">Voeg document toe</button></div>
-                            <button type="button" class="btn btn-primary" onclick="backToRequest()">Vorige stap</button>
-                            <button style="float: right" class="btn btn-primary" type="submit">Maak JSON</button>
-                        </div>
-                    </form>
-                </div>  
+                <div class="form-group col-md-2">
+                    <label for="identifier">Uniek ID</label>
+                    <input class="form-control" type="text" name="identifier" placeholder="ID">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="type">Type</label>
+                    <select class="form-control" name="type">
+                        <option disabled selected value> -- selecteer een optie -- </option>
+                        <option>Verzoek</option>
+                        <option>Actieve openbaarmaking</option>
+                    </select>
+                </div>
             </div>
+
+            <!-- Secondary info row-->
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="firstRecipient">Eerste ontvanger</label>
+                    <input class="form-control" type="text" name="firstRecipient" placeholder="Eerste ontvanger">
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="topic">Thema</label>
+                    <input class="form-control" type="text" name="topic" placeholder="Thema">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="idTopic">Thema ID</label>
+                    <input class="form-control" type="text" name="idTopic" placeholder="Thema ID">
+                </div>
+            </div>
+
+            <!-- Extra info row-->
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="url">URL naar publicatie</label>
+                    <input class="form-control" type="text" name="url" placeholder="URL"  >
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="requester">Verzoeker</label>
+                    <input class="form-control" type="text" name="requester" placeholder="Verzoeker">
+                </div>
+                <div class="form-group col-md-2">
+                    <label for="idInternal">Intern ID</label>
+                    <input class="form-control" type="text" name="topic" placeholder="Intern ID">
+                </div>
+            </div>
+
+            <!-- Date row-->
+            <div class="row">
+                <div class="form-group col-md-6">
+                    <label for="fileDate">Verzoekdatum</label>
+                    <input class="datepicker_input form-control" type="text" name="fileDate" placeholder="DD/MM/YYYY">
+                </div>
+                <div class="form-group col-md-6">
+                    <label for="decisionDate">Besluitdatum</label>
+                    <input class="datepicker_input form-control" type="text" name="decisionDate" placeholder="DD/MM/YYYY"  >
+                </div>
+            </div>
+
+            <!-- Decision row-->
+            <div class="row">
+                <div class="form-group col-md-4">
+                    <label for="handledBy">Behandeld door</label>
+                    <input class="form-control" type="text" name="handledBy" placeholder="Behandeld door"  >
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="valuation">Beoordeling</label>
+                    <select class="form-control" name="valuation" >
+                        <option disabled selected value> -- selecteer een optie -- </option>
+                        <option>Openbaar</option>
+                        <option>Deels openbaar</option>
+                        <option>Niet openbaar</option>
+                        <option>Reeds openbaar</option>
+                    </select>
+                </div>
+                <div class="form-group col-md-4">
+                    <label for="adjourned">Verdaagd (indien van toepassing)</label>
+                    <select class="form-control" name="adjourned">
+                        <option disabled selected value> -- selecteer een optie -- </option>
+                        <option>Ja</option>
+                        <option>Nee</option>
+                    </select>
+                </div>
+            </div>
+            
+            <!-- Description row-->
+            <div class="row">
+                <div class="form-group col-md-12">
+                    <label for="description">Beschrijving</label>
+                    <textarea class="form-control" rows="3" name="description" placeholder="Beschrijving"></textarea>
+                </div>
+            </div>
+
+            <button style="float: right" type="button" class="btn btn-primary" onclick="createDocuments()">Volgende stap</button>
         </div>
-    </div>
 
-    <!-- Bootstrap 5 JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+        <div id="document-level" style="display: none">
+            <div class="input_fields_wrap">
+            </div>
+            <div><button style="margin-bottom: 30px" type="button" class="btn btn-primary" id="newdocument" onclick="addDocument()">Voeg document toe</button></div>
+            <button type="button" class="btn btn-primary" onclick="backToRequest()">Vorige stap</button>
+            <button style="float: right" class="btn btn-primary" type="submit">Maak JSON</button>
+        </div>
+    </form> 
 
-    <!-- Vanilla Datepicker JS -->
-    <script src='https://cdn.jsdelivr.net/npm/vanillajs-datepicker@1.1.4/dist/js/datepicker-full.min.js'></script>
+{% endblock %}
 
-</body>
-
+{% block script %}
 <script>
 
     var wrapper = $(".input_fields_wrap");
@@ -191,7 +159,7 @@
                 <label for="title">Titel</label>
                 <input class="form-control" type="text" name="${prefix}title" placeholder="Titel">
             </div>
-            <div class="form-group col-md-6">
+            <div class="form-group col-md-3">
                 <label for="type">Documenttype</label>
                 <select class="form-control" id="${prefix}" name="${prefix}documentType" onchange="extraFields(this.id, this.value)">
                     <option disabled selected value> -- selecteer een optie -- </option>
@@ -200,6 +168,10 @@
                     <option>Inventarislijst</option>
                     <option>Vrijgegeven document</option>
                 </select>
+            </div>
+            <div class="form-group col-md-3">
+                <label for="date">Datum</label>
+                <input class="datepicker_input_${documents} form-control" type="text" name="${prefix}date" placeholder="DD/MM/YYYY"  >
             </div>
         </div>
         <div class="row">
@@ -217,6 +189,12 @@
             </div>
         </div>
 
+        <div class="row">
+            <div class="form-group col-md-12">
+                <label for="description">Beschrijving</label>
+                <textarea class="form-control" rows="3" name="${prefix}description" placeholder="Beschrijving"></textarea>
+            </div>
+        </div>
         
         <!-- Extra fields for published documents-->
         <div style="display: none" id="${prefix}extraFields">
@@ -230,12 +208,6 @@
                     <input class="form-control" type="text" name="${prefix}recipient" placeholder="Verzender">
                 </div>
                 <div class="form-group col-md-4">
-                    <label for="date">Datum</label>
-                    <input class="datepicker_input form-control" type="text" name="${prefix}date" placeholder="DD/MM/YYYY"  >
-                </div>
-            </div>
-            <div class="row">
-                <div class="form-group col-md-6">
                     <label for="annexType">Type vrijgegeven document</label>
                     <input class="form-control" type="text" name="${prefix}annexType" placeholder="Type vrijgegeven document">
                 </div>
@@ -261,7 +233,15 @@
                 </div>
             </div>
         </div>`);
+        const elems = document.querySelectorAll(`.datepicker_input_${documents}`);
+        for (const elem of elems) {
+        const datepicker = new Datepicker(elem, {
+            'format': 'yyyy-mm-dd', // UK format
+            title: getDatePickerTitle(elem)
+        });
+
         documents++;
+    }  
     }
 
     /* Bootstrap 5 JS included */
@@ -287,6 +267,5 @@
     });
     }     
 </script>
-
-</html>
+{% endblock %}
 

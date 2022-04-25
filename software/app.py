@@ -1,9 +1,13 @@
+from importlib.metadata import metadata
 from flask import Flask , request, render_template, Response
 from tempfile import mkdtemp
 
 import re
 from apps.production import create_metadata
+from apps.validation import validate_metadata
 import json
+from time import strftime, gmtime
+import pandas as pd
 
 # Configure applicatioN
 app = Flask(__name__)
@@ -31,12 +35,29 @@ def create_json():
     files = request.files
 
     metadata_object = create_metadata(form_data, files)
+    validation_result = validate_metadata(metadata_object)
 
-    # Standard metadata
+    if validation_result == True:
+        return generate_resultpage(metadata_object)
+    else:
+        return render_template('invalidpage.html', errors=validation_result, metadata_string=json.dumps(metadata_object, indent=4))
+
+@app.route("/download_json", methods=["POST"])
+def download_json():
+    metadata_string = request.form.get('metadatastring')
+
+    timestamp = strftime("%Y%m%d-%H%M", gmtime())
+    filename = f"export_{timestamp}.json"
+
+    return Response(metadata_string, 
+            mimetype='application/json',
+            headers={'Content-Disposition':f'attachment;filename={filename}'})
+
+def generate_resultpage(metadata_object):
+
+    doc_table = pd.DataFrame(metadata_object['documents']).to_html(border=0, classes="table table-striped")
     metadata_string = json.dumps(metadata_object, indent=4)
 
-    return render_template('json.html', test_thing=metadata_string)
-    #return Response(metadata_string, 
-    #        mimetype='application/json',
-    #        headers={'Content-Disposition':'attachment;filename=test.json'})
-
+    return render_template('validpage.html', metadata=metadata_object, 
+                                             table=doc_table, 
+                                             metadata_string=metadata_string)
