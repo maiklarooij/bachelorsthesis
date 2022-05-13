@@ -1,7 +1,7 @@
 # Schema specificatie
 Op basis van mijn onderzoek naar het FAIR en transparant publiceren van reacties op informatieverzoeken, hierbij het gemaakte schema. Het gaat uit van een publicatieobject, wat de gehele reactie betreft, en een documentobject, wat een enkel document in een publicatie representeert. Documenten kunnen van verschillende typen zijn.
 
-![Objecten](publication_and_documents.png)
+![Objecten](figures/publication_and_documents.png)
 
 ## Attributen voor een publicatieobject
 |     Attribute    |     Type    |     Verplicht?    |     Omschrijving    |     Voorbeeld    |
