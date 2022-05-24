@@ -5,7 +5,7 @@
 - FAIRificatie!
 
 ![FAIRificatie](../../research/figures/FAIRificatie.png)
-![FAIRificatie](../../research/figures/example_inhoud.png)
+![FAIRificatie](example_inhoud.PNG)
 
 - Verdere proces
     - Mijn voorstel: volgende week vrijdag 3 juni een conceptversie die redelijk af is voor feedback
