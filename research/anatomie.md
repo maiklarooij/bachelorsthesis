@@ -4,7 +4,6 @@ Hoe representeren we een Wob-verzoek? Wat willen we opslaan?
 
 ## Geheel Wob-verzoek
 
-
 |Veld|Engels|Namespace|Type|Verplicht?|Omschrijving|Voorbeeld|
 |:----|:----|:----|:----|:----|:----|:----|
 |identifier|identifier|DCMI|number|Ja|Uniek ID|3928|
