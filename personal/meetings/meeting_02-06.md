@@ -24,3 +24,6 @@ Laatste dingen:
     **Dossier:** identifier, title, subject, description, date, type 
 
     **Document:** identifier, title, description, format, date, type, language, rights
+
+
+- Belangrijke tabel bij metadata identificatie: in scriptie zelf of bijlage?
